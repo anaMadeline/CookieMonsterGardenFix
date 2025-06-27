@@ -28,7 +28,8 @@ export default function GardenPlots() {
     } else if (plantName === 'Bakeberry') {
       l('CMTooltipPlantReward').textContent = `${
         mature ? Beautify(Math.min(Game.cookies * 0.03, Game.cookiesPs * 60 * 30)) : '0'
-      } / ${Beautify(Game.cookiesPs * 60 * 30)}`;
+      } / ${Beautify(Game.cookiesPs * 60 * 30)}
+        / ${Beautify(Game.cookies * 0.03)}`;
     } else if (plantName === 'Queenbeet') {
       l('CMTooltipPlantReward').textContent = `${
         mature ? Beautify(Math.min(Game.cookies * 0.04, Game.cookiesPs * 60 * 60)) : '0'
